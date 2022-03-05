@@ -43,18 +43,20 @@ h4 {
     margin-bottom: 0px;
 }
 
-h5 {
+h6 {
     font-size: 16px;
     line-height: 120%;
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 35px;
+    padding: right: 35px;
 }
 
 p {
     font-size: 16px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding: right: 35px;
 }
 
 img {
