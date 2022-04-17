@@ -13,6 +13,94 @@ body {
     justify-content: flex-start;
 }
 
+html, body{
+  cursor: none;
+  
+}
+
+.wrap{
+  position: relative;
+  top: 100px;
+  width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.cursor{
+  top: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+.dot{
+  top: -20px;
+  left: -20px;
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #abff32;
+  z-index: 9999;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  will-change: transform;
+  transform: scale(1);
+  transition: 0.2s all;
+}
+
+.drag, .scroll, .hover{
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  font-size: 30px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.drag{
+  display: inline-block;
+  background-color: #6E64DB;
+}
+
+.scroll{
+  display: inline-block;
+  background-color: #68CA62;
+}
+
+.hover{
+  display: inline-block;
+  background-color: #B422C4;
+}
+
+.drag-pointer{
+  transition: 0.2s all;
+  transform: scale(3);
+  border-radius: 0%;
+  background-color: #333898;
+}
+
+.scroll-pointer{
+  transition: 0.2s all;
+  width: 60px;
+  height: 60px;
+  transform: scale(2) rotate(45deg);
+  border-radius: 0%;
+  background-color: #1DA114;
+}
+
+.hover-pointer{
+  transition: 0.2s all;
+  width: 0px;
+  height: 0px;
+  border-radius: 0%;
+  background: transparent;
+  border-bottom: 100px solid #8D1F7B;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  background-color: transparent;
+}
+
+
 h1 {
     line-height: 120%;
     letter-spacing: -2px;
